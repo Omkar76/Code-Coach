@@ -1,171 +1,183 @@
 *{
-
     margin:0;
-
     padding:0;
-
     box-sizing:border-box;
-
 }
 
 ::selection{
-
     color:white;
-
     background-color:goldenrod;
-
 }
 
 html{
-
   scroll-behavior: smooth;
-
 }
 
 body{
-
     background-color:#212121;
-
 }
 
 header{
-
     font-size:1.5rem;
-
     color:white;
-
     background-color:black;
-
     padding:20px 0 20px 10px;
-
     position:stiky;
-
     line-height:100%;
-
     font-variant:small-caps;
-
     border-bottom:2px solid goldenrod;
-
 }
 
  
-
 /*0 - 100 counter*/
-
 #count{
-
     color:goldenrod;
-
     text-align:center;
-
     font-size:7rem;
-
     display:block;
-
     animation:glow 700ms infinite alternate;
-
     text-shadow:0 0 10px goldenrod;
-
 }
 
 @keyframes glow{
-
     to{
-
         text-shadow:0 0 0 goldenrod;
-
     }
-
 }
-
  
-
 .congoSection{
-
       width:100vw;
-
       display:flex;
-
       flex-direction:column;
-
       align-items:center;
-
  }
 
 #congoMessage{
-
     white-space:pre-wrap; 
-
     font-size:2.5rem;
-
     color:dodgerblue;
-
     padding:5%;
-
     text-align:center;
-
 }
-
  
-
 .arrows{
-
     margin-top:5%;
-
     stroke:dodgerblue;
-
     stroke-width:4px;
-
     fill:transparent;
-
     width:60px;
-
     opacity:0;
-
     transition:opacity 2s;
-
     animation:moveupdown 1s infinite alternate;
-
 }
 
 @keyframes moveupdown{
-
   to{
-
      transform:translateY(10px);
-
   }
-
 }
 
 /*it's initially hidden*/
-
 main{
-
     opacity:0;
-
     transition-delay:4s; 
-
     transition-duration:2s;
-
     max-width:400px;
-
     margin:auto;
-
 }
 
 #search-bar{
-
     width:80%;
-
     border:1px solid dodgerblue;
-
     font-size:1.3em;
-
     padding:15px;
-
     outline:dodgerblue;
-
     display:block;
+    margin:15px auto auto auto;
+    border-radius:10px;
+    background-color:#111111;
+    color:dodgerblue;
+    transition: all .4s;
+    caret-color:goldenrod;
+}
 
-    margin
+.card{
+    height:90px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin:10% 7% 10% 7%;
+    box-sizing:border-box;
+    background-color:#313131;
+    background:
+    linear-gradient(
+    70deg,black,#313131);
+    border:1px solid steelblue;       
+    border-left:6px ridge goldenrod;
+    border-radius:5px 5px 5px 5px;
+    transition: all .4s;
+    box-shadow:0 0 1px 1px dodgerblue;
+}
+
+
+.card:hover,#search-bar:hover{
+    transform:scale(1.1,1.1); 
+    box-shadow:0 0 5px 5px dodgerblue;
+}
+
+.avtar{
+    border:5px outset goldenrod;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    background-color:#111111;
+    z-index:1;
+}
+
+.board{
+    border:2px solid goldenrod;
+    border-left:2px outset dodgerblue;
+    border-top:2px outset dodgerblue;
+    width:80%;
+    max-width:400px;
+    padding:1.3em;
+    font-size:1.3em;
+    background-color:#111111;
+    border-radius:3%;
+}
+
+#Thanks{
+    line-height:2rem;
+    margin:auto;/*aligns to center*/
+    color:white;
+}
+
+.textbig{
+  display:block;
+  font-size:2rem;
+  margin-bottom:1rem;
+  color:dodgerblue;
+}
+
+/*anch => anchor =>links*/
+.anch{
+    font-weight:900;
+    display:block;
+    color:dodgerblue;
+    text-decoration:none;/*remove underline*/
+}
+
+footer{
+    display:flex;
+    flex-direction:row;
+    margin:15px auto 15px auto;
+}
+
+.logo{
+    height:50px;
+    width:50px;
+    border:2px solid dodgerblue;
+    border-radius:50%;
+    border-top-color:goldenrod;
+    border-bottom-color:goldenrod;
+}
