@@ -1,0 +1,171 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+::selection{
+
+    color:white;
+
+    background-color:goldenrod;
+
+}
+
+html{
+
+  scroll-behavior: smooth;
+
+}
+
+body{
+
+    background-color:#212121;
+
+}
+
+header{
+
+    font-size:1.5rem;
+
+    color:white;
+
+    background-color:black;
+
+    padding:20px 0 20px 10px;
+
+    position:stiky;
+
+    line-height:100%;
+
+    font-variant:small-caps;
+
+    border-bottom:2px solid goldenrod;
+
+}
+
+ 
+
+/*0 - 100 counter*/
+
+#count{
+
+    color:goldenrod;
+
+    text-align:center;
+
+    font-size:7rem;
+
+    display:block;
+
+    animation:glow 700ms infinite alternate;
+
+    text-shadow:0 0 10px goldenrod;
+
+}
+
+@keyframes glow{
+
+    to{
+
+        text-shadow:0 0 0 goldenrod;
+
+    }
+
+}
+
+ 
+
+.congoSection{
+
+      width:100vw;
+
+      display:flex;
+
+      flex-direction:column;
+
+      align-items:center;
+
+ }
+
+#congoMessage{
+
+    white-space:pre-wrap; 
+
+    font-size:2.5rem;
+
+    color:dodgerblue;
+
+    padding:5%;
+
+    text-align:center;
+
+}
+
+ 
+
+.arrows{
+
+    margin-top:5%;
+
+    stroke:dodgerblue;
+
+    stroke-width:4px;
+
+    fill:transparent;
+
+    width:60px;
+
+    opacity:0;
+
+    transition:opacity 2s;
+
+    animation:moveupdown 1s infinite alternate;
+
+}
+
+@keyframes moveupdown{
+
+  to{
+
+     transform:translateY(10px);
+
+  }
+
+}
+
+/*it's initially hidden*/
+
+main{
+
+    opacity:0;
+
+    transition-delay:4s; 
+
+    transition-duration:2s;
+
+    max-width:400px;
+
+    margin:auto;
+
+}
+
+#search-bar{
+
+    width:80%;
+
+    border:1px solid dodgerblue;
+
+    font-size:1.3em;
+
+    padding:15px;
+
+    outline:dodgerblue;
+
+    display:block;
+
+    margin
