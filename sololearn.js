@@ -213,13 +213,13 @@ const proGroup=[
 const platforms=[
     {
      name:'Codepen',
-     link:'',
+     link:'https://codepen.io/omkarj6/full/GRgPbNV',
  logo:'https://blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png',
     },
     
     {
      name:'Github',
-     link:'',
+     link:'https://github.com/Omkar76/Code-Coach',
      logo:'https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-512.png'
     },
     {
